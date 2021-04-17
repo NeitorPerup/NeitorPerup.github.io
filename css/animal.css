@@ -1,0 +1,43 @@
+body{
+	font-family: 'Alice', serif;
+	width: 100vw;
+}
+
+.animals__img{
+	height:150px;
+	max-width: 180px;
+	object-fit: contain;
+}
+
+.animals__ramka{
+	float: left; 
+	margin-right: 10px; 
+	margin-bottom: 10px;
+}
+
+.animals__name{
+	font-size: 18px;
+	font-weight: bolder;
+	margin-top:20px;
+}
+
+.firstrow, .secondrow{
+	display: flex;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.animals__elem{
+	width: calc(100% / 3);
+	height: 240px;
+	align-items: center;
+	display:block;
+	padding: 20px;
+	overflow: hidden;
+	padding-left:60px;
+}
+
+.Animals{
+	padding:0 30px;
+	width:80%;
+}

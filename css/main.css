@@ -76,6 +76,8 @@ body{
 
 .ents__img{
 	margin-left: 20%;
+	border: 5px solid white;
+	border-radius: 55px;
 }
 
 .ents__img:hover{

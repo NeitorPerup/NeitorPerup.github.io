@@ -9,7 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-	<title>Усть-Ильимский зоопарк</title>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	<title>Регистрация</title>
 </head>
 <body>
 
@@ -24,38 +26,67 @@
 			<a href="signin.html" class = "navbar-brand">Вход</a>
 			<a href="signup.html" class = "navbar-brand">Регистрация</a>		
 		</div>			
-	</nav>					
+	</nav>	
+	<!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(76227355, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/76227355" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>			
 </header>
 
  <div class="container">
 	 <div class="row">
 	 <div class="col-md-6 col-md-offset-3 well">
 	 <h3 class="text-center">Регистрация</h3>
-	 <form class="form">
-	 <div class="col-xs-12">
-	 <div class="form-group">
-	 <input type="text" class="form-control" placeholder="Введите Имя" />
-	 </div>
-	 </div>
-	 <div class="col-xs-12">
-	 <div class="form-group">
-	 <input type="email" class="form-control" placeholder="Ваш E-mail" />
-	 </div>
-	 </div>
-	 <div class="col-xs-12">
-	 <div class="form-group">
-	 <input type="password" class="form-control" value="samplepass" />
-	 </div>
-	 </div>
-	 <div class="col-xs-12">
-	 <div class="form-group">
-	 <input type="password" class="form-control" value="samplepass" />
-	 </div>
-	 </div>
-	 <div class="text-center col-xs-12">
-	 <input type="button" class="btn btn-default" value="Зарегистрироваться" />
-</div>
- </form>
+	 <form class="form" id = "form_signUp">
+		 <div class="col-xs-12">
+			 <div class="form-group">
+			 	<input type="text" class="form-control" placeholder="Введите Имя" id="name" name="name" />
+			 </div>
+		</div>
+		<div class="col-xs-12">
+			<div class="form-group">
+			<input type="email" class="form-control" placeholder="Ваш E-mail" id="email" name="email" />
+			</div>
+		</div>
+		<div class="col-xs-12">
+			<div class="form-group">
+				<input type="password" class="form-control" placeholder="samplepass" id="password" name="password" />
+			</div>
+		</div>
+		<div class="col-xs-12">
+			<div class="form-group">
+			 	<input type="password" class="form-control" placeholder="samplepass" id="repeatpassword" name="repeatpassword" />
+			 </div>
+		</div>
+		<div class="text-center col-xs-12">
+			 <input type="submit" class="btn btn-default" value="Зарегистрироваться"/>
+		</div>
+ 	</form>
 
  </div>
  </div>
@@ -75,4 +106,6 @@
 	</div>
 
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+<script src="site.js"></script>
 </body>

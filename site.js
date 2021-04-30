@@ -16,8 +16,10 @@ form.addEventListener("formdata", event => {
     let password = data.get("password");
     let repeatedPassword = data.get("repeatpassword");
 
-    if (email == null || email.length == 0 || password == null || password.length == 0
-     || repeatedPassword == null || repeatedPassword.length == 0 || name == null || name.length == 0) {
+    if (email == null || password == null || name == null || repeatedPassword == null)
+    	Swal.fire("Упс, у нас что-то пошло не так =(", "Попробуйте позже", 'error');
+
+    if (email.length == 0 ||  password.length == 0 || repeatedPassword.length == 0 || name.length == 0) {
         Swal.fire('Одно из полей не заполнено!', 'Проверьте введенные данные', 'error');
         return;
     }

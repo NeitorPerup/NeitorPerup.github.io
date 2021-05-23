@@ -1,0 +1,61 @@
+html{
+	overflow-x:hidden;
+}
+
+body{
+	width: 100vw;
+}
+
+
+.header{
+	margin: 0 40px;
+	width: 90%;
+}
+
+
+.navbar{
+	width: 100%;
+}
+
+.navbar-brand:hover, .signin_out .navbar-brand:hover{
+	color:blue;
+	-webkit-transition: all 0.3s ease;;
+  	-moz-transition: all 0.3s ease;;
+ 	 -o-transition: all 0.3s ease;;
+  	transition: all 0.3s ease;
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+/* footer
+================ */
+
+.footer{
+	margin-top: 80px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+}
+
+.foooter__socseti{
+	display: inline-block;
+	float: right;
+	margin-right: 40px;
+}
+
+.footer__text{
+	position: relative;
+ 	top: 6px;
+}
+
+.footer__img{
+	max-width:40px;
+	height:46px;
+	margin-left: 10px;
+	object-fit: contain;
+}
+
+.footer__img:hover{
+	cursor:pointer;
+}

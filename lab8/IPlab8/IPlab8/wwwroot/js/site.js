@@ -1,4 +1,4 @@
-let form = document.getElementById("form_signUp");
+﻿let form = document.getElementById("form_signUp");
 
 form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -17,9 +17,9 @@ form.addEventListener("formdata", event => {
     let repeatedPassword = data.get("repeatpassword");
 
     if (email == null || password == null || name == null || repeatedPassword == null)
-    	Swal.fire("Упс, у нас что-то пошло не так =(", "Попробуйте позже", 'error');
+        Swal.fire("Упс, у нас что-то пошло не так =(", "Попробуйте позже", 'error');
 
-    if (email.length === 0 ||  password.length === 0 || repeatedPassword.length === 0 || name.length === 0) {
+    if (email.length === 0 || password.length === 0 || repeatedPassword.length === 0 || name.length === 0) {
         Swal.fire('Одно из полей не заполнено!', 'Проверьте введенные данные', 'error');
         return;
     }
